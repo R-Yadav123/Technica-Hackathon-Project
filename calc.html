@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+ <html>
+
+ <head>
+    <body style="background-color: #FFFAEF">
+
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Calculate Expenses</title>
+   <link href="style.css" rel="stylesheet" type="text/css" />
+
+   <style>
+       table {
+           border-collapse: collapse;
+           width: 50%;
+       }
+       th, td {
+           border: 1px solid #ccc;
+           padding: 8px;
+           text-align: left;
+       }
+   </style>
+   <script>
+       function calculateTotal() {
+           var rent = parseFloat(document.getElementById("rent").value) || 0;
+           var utilities = parseFloat(document.getElementById("utilities").value) || 0;
+           var groceries = parseFloat(document.getElementById("groceries").value) || 0;
+           var transportation = parseFloat(document.getElementById("transportation").value) || 0;
+           var books = parseFloat(document.getElementById("books").value) || 0;
+           var other = parseFloat(document.getElementById("other").value) || 0;
+
+           var totalExpenses = rent + utilities + groceries + transportation + books + other;
+         if(rent < 0 || utilities < 0 || groceries < 0 || transportation < 0 || books < 0 ||other < 0)
+            alert("Please enter a positive monetary amount.");
+         else {
+         alert("Total Monthly Expenses: $"+totalExpenses);
+        
+           // Check expenses for groceries, transportation, and books
+           if (groceries > 150) {
+               document.getElementById("groceriesMessage").innerHTML = "You have spent too much on groceries.";
+           } else {
+               document.getElementById("groceriesMessage").innerHTML = "";
+           }
+
+           if (transportation > 100) {
+               document.getElementById("transportationMessage").innerHTML = "You have spent too much on transportation.";
+           } else {
+               document.getElementById("transportationMessage").innerHTML = "";
+           }
+
+           if (books > 200) {
+               document.getElementById("booksMessage").innerHTML = "You have spent too much on books and supplies.";
+           } else {
+               document.getElementById("booksMessage").innerHTML = "";
+           }
+       }
+       }
+   </script>
+
+ </head>
+ <body>
+   <center>
+   <div class="topnav">
+     <a href="index.html">Home</a>
+     <a href ="calc.html">Calculate Expenses</a>
+     <a href = "resources.html">Resources</a>
+     <a href = "team.html">Meet The Founders</a>
+   </div>
+   <center><h1 style="font-family:Trebuchet MS;">Monthly Financial Calculator ($)</h1></center>
+     
+   <form>
+     <b><label style="font-family:Trebuchet MS;" for="rent">Rent: </label>
+       
+     <input type="text" id="rent" placeholder="Enter rent expense" size="28"><br><br>
+
+     <label style="font-family:Trebuchet MS;" for="utilities">Utilities:  </label>
+     <input type="text" id="utilities" placeholder="Enter utilities expense" size="28"><br><br>
+
+     <label style="font-family:Trebuchet MS;" for="groceries">Groceries: </label>
+     <input type="text" id="groceries" placeholder="Enter groceries expense" size="28"><br>
+     <span id="groceriesMessage" style="color: red;"></span><br>
+
+     <label style="font-family:Trebuchet MS;" for="transportation">Transportation:</label>
+     <input type="text" id="transportation" placeholder="Enter transportation expense" size="28"><br>
+     <span id="transportationMessage" style="color: red;"></span><br>
+
+     <label style="font-family:Trebuchet MS;" for="books">Books & Supplies:</label>
+     <input type="text" id="books" placeholder="Enter books expense" size = "28"><br>
+     <span id="booksMessage" style="color: red;"></span><br>
+
+     <label style="font-family:Trebuchet MS;" for="other">Other Expenses:</label>
+     <input type="text" id="other" placeholder="Enter other expenses" size = "28"><br><br></b>
+     <input  type="button" style="font-family:Trebuchet MS;" value="Calculate Total" onclick="calculateTotal()"><br><br>
+
+     </form>
+     </center>
+   <div id="total"></div>
+
+
+   <script src="script.js"></script>
+   
+
+   <!--
+   This script places a badge on your repl's full-browser view back to your repl's cover
+   page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+   teal, blue, blurple, magenta, pink!
+   -->
+
+   <head>
+       <link rel="stylesheet" type="text/css" href="styles.css">
+   </head>
+   <body>
+       <div class="image-container">
+           <center><img src="assets/money.jpeg" alt="money" height="400" width="600"></center>
+       </div>
+   </body>
+<br><br><br><br><br><br><br><br><br><br>
+   
+  
+   <div class="footer">
+      <p><center> © RUMoneyWize 2023. <h3><center>RUMoneyWize was developed during Technica 2023.</center></h3></center></p>
+      </div>
+      <style>
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: #C65151;
+      color: white;
+      font-family: 'Trebuchet MS', monospace;
+      text-align: center;
+    }
+        input[type=button] {
+          background-color: #ae2012;
+          border: none;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+
+    </style>
+
+  
+   
+ </body>
+
+ </html>
