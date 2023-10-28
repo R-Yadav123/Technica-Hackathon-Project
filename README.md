@@ -1,6 +1,6 @@
 # Technica-Hackathon-Project
 
-RUMoneyWize was created by college students, for college students. RUMoneyWize was created at University of Maryland College Park's Technica Hacks 2023. 
+RUMoneyWize was created by college students, for college students. The slogan is "Where finance meets wizardry." RUMoneyWize was created at University of Maryland College Park's Technica Hacks 2023. 
 The webpages has various functionalities and features. Its UI/UX includes the color pallete of scarlet colors. The webpage has a Home, Calculate Expenses,
 Resources, and Meet The Founders page. The website is user-friendly and easy to navigate. There is a navigation bar and a footer. The webpage
 was coded in HTML, CSS, and JavaScript, using the Repl.it framework. My team and I coded this project in less than 48 hours and our idea was able to come to
