@@ -6,6 +6,8 @@ Resources, and Meet The Founders page. The website is user-friendly and easy to 
 was coded in HTML, CSS, and JavaScript, using the Repl.it framework. My team and I coded this project in less than 48 hours and our idea was able to come to
 life through the use of code.
 
+Devpost Submission: https://devpost.com/software/rumoneywize 
+
 Below are images of the "Home" tab.
 <img width="1256" alt="Img5" src="https://github.com/R-Yadav123/Technica-Hackathon-Project/assets/103969315/00521728-2e2d-430a-a62f-9049a27e96e3">
 <img width="1255" alt="Img4" src="https://github.com/R-Yadav123/Technica-Hackathon-Project/assets/103969315/fbadee33-da32-4c00-9cdd-8e06daa20730">
